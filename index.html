@@ -56,6 +56,8 @@
         <h2 class="carrossel__titulo">Novos Lançamentos</h2>
         <div class="swiper">
             <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide"><img src="imagens/ApacheKafka.png" alt="Livro sobre apache kafta e spring boot da alura books"></div>
@@ -65,15 +67,35 @@
               <div class="swiper-slide"><img src="imagens/Portugol.png" alt="Livro sobre Portugol"></div>
               <div class="swiper-slide"><img src="imagens/Acessibilidade.png" alt="Livro sobre Acessibilidade da Alura books"></div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
           
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+           
           
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="card">
+            <!-- 1° linha-->
+            <div class="card__descricao">
+                <!-- 1° coluna-->
+                <div class="descricao">
+                    <h3 class="descricao__titulo"> Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livros">Angulo 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!-- 2° coluna-->
+                <img src="imagens/Perfil-escritora 2.png" class="descricao__imagem">
+            </div>
+            <!-- 2° linha-->
+            <div class="card__botoes">
+                <!--1° coluna-->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="imagens/Favoritos.svg" alt="icone Favoritos" class="conteiner__imagem"></li>
+                    <li class="botoes__item"><img src="imagens/Compras.svg" alt="icone de compras" class="conteiner__imagem"></li>
+                </ul>
+                <!--2° coluna-->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -81,6 +103,10 @@
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
             slidesPerView: 2.6,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            }
         });
     </script>
 </body>
