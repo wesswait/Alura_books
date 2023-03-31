@@ -67,8 +67,6 @@
               <div class="swiper-slide"><img src="imagens/Portugol.png" alt="Livro sobre Portugol"></div>
               <div class="swiper-slide"><img src="imagens/Acessibilidade.png" alt="Livro sobre Acessibilidade da Alura books"></div>
             </div>
-          
-            <!-- If we need navigation buttons -->
            
           
             <!-- If we need scrollbar -->
@@ -98,6 +96,91 @@
             </div>
         </div>
     </section>
+    <!-- Aqui começa o segundo -->
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="imagens/Guia Front-end.png" alt="Livro Guia Front-end da Alura books"></div>
+              <div class="swiper-slide"><img src="imagens/Liderança.png" alt="Livro sobre liderança em design da Alura books"></div>
+              <div class="swiper-slide"><img src="imagens/Javascript.png" alt="Livro sobre Javascript assertivo da Alura books"></div>
+              <div class="swiper-slide"><img src="imagens/Portugol.png" alt="Livro sobre Portugol"></div>
+            </div>
+          
+            <!-- If we need navigation buttons -->
+           
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="card">
+            <!-- 1° linha-->
+            <div class="card__descricao">
+                <!-- 1° coluna-->
+                <div class="descricao">
+                    <img src="imagens/Estrelinhas.png" alt="Estrelinhas da melhor colocação">
+                    <h3 class="descricao__titulo">Autora do Mês</h3>
+                    <h2 class="descricao__titulo-livros">Juliana Agorikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <!-- 2° coluna-->
+                <img src="imagens/Perfil-escritora 1.png" class="descricao__imagem">
+            </div>
+            <!-- 2° linha-->
+            <div class="card__botoes">
+                <!--1° coluna-->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="imagens/Favoritos.svg" alt="icone Favoritos" class="conteiner__imagem"></li>
+                    <li class="botoes__item"><img src="imagens/Compras.svg" alt="icone de compras" class="conteiner__imagem"></li>
+                </ul>
+                <!--2° coluna-->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Android</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Marketing Digital</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Agile</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Startups</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">HTML & CSS</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Python</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">OO</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Java</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__paragrafo">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" class="contato__banner-pesquisa" placeholder="Cadastre seu e-mail">
+    </section>
+    <hr/>
+    <footer class="rodape">
+        <h2 class="rodape__titulo">By Wess</h2>
+    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {

@@ -1,0 +1,38 @@
+.contato{
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.contato__titulo, 
+.contato__paragrafo{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo{
+    font-size:1.125rem;
+    font-weight: 500;
+}
+
+.contato__paragrafo{
+    font-weight: 300;
+    margin: 1em 0;
+}
+.contato__banner-pesquisa::placeholder{
+    font-family: var(--font-principal);
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--azul-degrade);
+    background: url("imagens/Email.png") no-repeat;
+    background-position: 1em;
+}
+.contato__banner-pesquisa{
+    background-color: transparent;
+    color: var(--azul-degrade);
+    border-radius: 1.5rem;
+    padding: 1em;
+    width: 90%;
+}
