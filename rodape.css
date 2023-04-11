@@ -9,5 +9,41 @@ hr{
     font-size: var(--font-principal);
     font-weight: 400;
     font-size: 1rem;
-    padding: 17px 24px 24px 24px;
+    padding: 5px 10px;
+    
 }
+.lista-rodape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 0 50px 0;
+    }
+    .rodape__titulo{
+        padding: 0;
+    }
+    .lista-rodape{
+        display: block;
+    }
+    .lista-rodape__item{
+    display: flex;
+    align-items: center;
+    margin: 0.6em 0;
+    }
+    .lista-rodape__link{
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+    .lista-rodape__titulo{
+        font-size: 14px;
+        color: var(--cinza-claro);
+    }
+    .rodape__titulo{
+        font-size: 24px;
+    }
+}
+    

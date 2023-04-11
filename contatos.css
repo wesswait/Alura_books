@@ -36,3 +36,23 @@
     padding: 1em;
     width: 90%;
 }
+@media screen and (min-width: 1024px){
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contato__titulo{
+        font-size: 20px;
+    }
+    .contato__descricao {
+        margin-right: 10em;
+        width: 30%;
+    }
+    .contato__banner-pesquisa{
+        width: 40%;
+    }
+    .contato__banner-pesquisa::placeholder{
+        background-position: 6.2em;
+    }
+}
